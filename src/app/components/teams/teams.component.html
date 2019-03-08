@@ -1,0 +1,25 @@
+
+<div class="container" >
+    <div class="teamlist">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Full Name</th>
+            <th>Nickname</th>
+            <th>Number of Players</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let team of teamList; let i = index" >
+              <td scope="row">{{ i + 1 }}</td>
+              <td>{{ team.fullName }}</td>
+              <td>{{ team.name }}</td>
+              <td>{{ team.roster.length}}</td>
+              <td><button type="button" class="btn btn-info" [routerLink]="['/teams', team.id]">Details</button></td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+  </div>
