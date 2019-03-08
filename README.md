@@ -1,12 +1,11 @@
 # How to run
-npm install
-
-ng serve
+- npm install
+- ng serve
 
 # Tools
 
-Framework: Angular
-UI: ng-bootstrap
+- Framework: Angular
+- UI: ng-bootstrap
 
 # What I implement
 
